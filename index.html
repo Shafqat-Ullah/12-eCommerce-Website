@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 E-Commerce Websites | Made by Shafqat Ullah</title>
+    <meta name="description" content="Portfolio of 12 Modern E-Commerce Websites built and customized by Shafqat Ullah.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-color: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
+        }
+
+        .header {
+            text-align: center;
+            max-width: 800px;
+            margin: 2rem auto 4rem auto;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.8rem;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.1);
+            color: #818cf8;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.8rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(99, 102, 241, 0.1);
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: white;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+            box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span class="badge">Shafqat Ullah Portfolio</span>
+        <h1>12 E-Commerce Websites</h1>
+        <p>A collection of modern, responsive e-commerce web applications customized & built by Shafqat Ullah.</p>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- 1. Electro -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Electronics Store</div>
+                <h2>Electro</h2>
+                <p>Modern gadgets, laptops, smartphones & consumer electronics store platform.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./Electro-Bootstrap-1.0.0/Electro-Bootstrap-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 2. FoodMart -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Grocery & Supermarket</div>
+                <h2>FoodMart</h2>
+                <p>Fresh organic groceries, vegetables, fruits & daily essentials store.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./FoodMart-1.0.0/FoodMart-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 3. Sprylo -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Tech & Accessories</div>
+                <h2>Sprylo</h2>
+                <p>Bento grid tech store featuring smartwatches, headphones & accessories.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./Sprylo-1.0.0/Sprylo-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 4. ColoShop -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Fashion & Apparel</div>
+                <h2>ColoShop</h2>
+                <p>Trendy clothing, shoes & accessories store with product filters & countdown deals.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./coloshop-master/coloshop-master/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 5. Eflyer -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Multi-Category Store</div>
+                <h2>Eflyer</h2>
+                <p>Electronics, fashion & jewellery e-commerce shopping platform.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./eflyer-master/eflyer-master/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 6. EStore -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Fashion & Lifestyle</div>
+                <h2>EStore</h2>
+                <p>Clean fashion store featuring category carousels, checkout & single product pages.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./estore-1.0.0/estore-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 7. Kaira -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Fashion Store</div>
+                <h2>Kaira</h2>
+                <p>Minimalist fashion & clothing boutique e-commerce web application.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./kaira-1.0.0/kaira-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 8. MultiShop -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Online Mega Store</div>
+                <h2>MultiShop</h2>
+                <p>Full-featured online shop with detailed filters, cart & multi-page workflow.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./multishop-1.0.0/multishop-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 9. Stylish -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Footwear Boutique</div>
+                <h2>Stylish</h2>
+                <p>Premium sneakers & footwear collection website with modern layout.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./stylish-1.0.0/stylish-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 10. Ultras -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Clothing & Apparel</div>
+                <h2>Ultras</h2>
+                <p>Clothing store e-commerce featuring blog, shop, styles & thank-you pages.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./ultras-1.0.0/ultras-1.0.0/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 11. Believe -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Fashion & Products</div>
+                <h2>Believe</h2>
+                <p>Classic e-commerce store layout with tabs, owl carousels & quick view controls.</p>
+            </div>
+            <div class="card-actions">
+                <a href="./believe-master/believe-master/index.html" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- 12. Bloom -->
+        <div class="card">
+            <div>
+                <div class="card-tag">Next.js Web App</div>
+                <h2>Bloom Application</h2>
+                <p>Next.js & TypeScript full-stack e-commerce web application codebase.</p>
+            </div>
+            <div class="card-actions">
+                <a href="https://github.com/Shafqat-Ullah/12-eCommerce-Website/tree/main/bloomtpl-1.0.0/bloomtpl-1.0.0" target="_blank" class="btn btn-secondary">View Code</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Made by Shafqat Ullah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
